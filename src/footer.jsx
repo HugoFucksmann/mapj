@@ -49,6 +49,7 @@ const Footer = () => {
       width: "30px",
       height: "30px",
       objectFit: "contain",
+      cursor: "pointer",
     },
     line: {
       width: "100%",
@@ -91,9 +92,27 @@ const Footer = () => {
             NUESTRAS REDES
           </div>
           <div style={styles.socialIcons}>
-            <img src={imgFb} alt="Facebook" style={styles.icon} />
-            <img src={imgIg} alt="Instagram" style={styles.icon} />
-            <img src={imgTw} alt="Twitter" style={styles.icon} />
+            <a
+              href="https://www.facebook.com/jorgelinamudallel/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={imgFb} alt="Facebook" style={styles.icon} />
+            </a>
+            <a
+              href="https://www.instagram.com/jormudallel/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={imgIg} alt="Instagram" style={styles.icon} />
+            </a>
+            <a
+              href="https://x.com/JoritaMudallel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={imgTw} alt="Twitter" style={styles.icon} />
+            </a>
           </div>
         </div>
 

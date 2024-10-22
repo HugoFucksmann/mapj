@@ -136,7 +136,15 @@ export default function MapaReclamos() {
             los reclamos que recibimos. Esta herramienta nos permite estar +
             cerca, contar nuestro trabajo, y mejorar la participación ciudadana.
           </p>
-          <button style={styles.blueButton}>IR AL CANAL DE COMUNICACIÓN</button>
+          <button
+            onClick={() =>
+              (location.href =
+                "https://linktr.ee/jormudallelentubarrio?fbclid=PAZXh0bgNhZW0CMTEAAab9mVHD95DBwgW5QOzeul_A7PmJPa-ITCafIOUVaAq4qOO0l6oK_n6oI1Q_aem_07rDlCYwEZ-I04IQHPCCYg")
+            }
+            style={styles.blueButton}
+          >
+            IR AL CANAL DE COMUNICACIÓN
+          </button>
         </div>
         <div style={styles.imageWrapper}>
           <div style={styles.imageShadowBottom} />
