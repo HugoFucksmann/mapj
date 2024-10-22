@@ -81,11 +81,11 @@ const styles = {
   accordion: {
     width: "80%",
 
-    margin: "0 auto",
+    margin: "40px auto",
     color: "black",
   },
   item: {
-    borderBottom: "1px solid #e0e0e0",
+    borderBottom: "3px solid #e0e0e0",
   },
   header: {
     display: "flex",
@@ -95,13 +95,13 @@ const styles = {
     backgroundColor: "white",
   },
   icon: {
-    width: "80px",
-    height: "80px",
+    width: "70px",
+    height: "70px",
     marginRight: "15px",
   },
   title: {
     flex: 1,
-    fontSize: "38px",
+    fontSize: "32px",
     fontWeight: "bold",
     textTransform: "uppercase",
   },
@@ -109,9 +109,9 @@ const styles = {
     fontSize: "12px",
   },
   content: {
-    padding: "15px",
+    padding: "18px",
     backgroundColor: "#f5f5f5",
     borderRadius: 8,
-    marginBottom: 20,
+    marginBottom: 30,
   },
 };

@@ -3,12 +3,7 @@ import logoFooter from "./assets/RECURSOS/logofooter.png";
 import logoheader from "./assets/RECURSOS/logoheader.png";
 import landingImg from "./assets/landing.jpg";
 import quienesSomos from "./assets/RECURSOS/quienesSomos.png";
-import quienesSomosLogo from "./assets/RECURSOS/quienesSomos.png";
-import itemBandera from "./assets/RECURSOS/iconobandera.png";
-import itemOjo from "./assets/RECURSOS/iconoojo.png";
-import itemFlecha from "./assets/RECURSOS/iconoflecha.png";
 import logoquienessomos from "./assets/RECURSOS/logoquienessomos.png";
-
 import imgFb from "./assets/RECURSOS/fb.png";
 import imgIg from "./assets/RECURSOS/ig.png";
 import imgTw from "./assets/RECURSOS/tw.png";
@@ -16,15 +11,20 @@ import puenteFooter from "./assets/RECURSOS/puentefooter.png";
 import AccordionUsage from "./acordeon";
 import MapaReclamos from "./mapaReclamosComp";
 import EjesPrincipales from "./ejesPrincipales";
+import Footer from "./footer";
+
 const styles = {
   header: {
     backgroundColor: "#296ec1",
-    padding: "20px",
     color: "white",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
     width: "100%",
+    padding: "20px",
+    paddingLeft: 20,
+    paddingRight: 40,
+    boxSizing: "border-box",
   },
   logo: {
     width: "150px",
@@ -198,9 +198,9 @@ const Header = () => (
       <a href="#mapa-reclamos" style={styles.navLink}>
         Mapa de Reclamos
       </a>
-      <a href="#comunicacion" style={styles.navLink}>
-        Comunicación
-      </a>
+      {/*  <a href="#comunicacion" style={styles.navLink}>
+        Contacto
+      </a> */}
     </nav>
   </header>
 );
@@ -216,6 +216,7 @@ const Landing = () => (
       flexDirection: "column",
       justifyContent: "flex-end",
       alignItems: "center",
+      width: "100%",
     }}
   >
     <h2
@@ -224,6 +225,7 @@ const Landing = () => (
         paddingBottom: 60,
         paddingLeft: "10%",
         backgroundColor: "rgba(0, 0, 0, 0.07)",
+        maxWidth: 900,
       }}
     >
       Yo Quiero Santa Fe es una apuesta generacional para liderar los desafíos
@@ -269,104 +271,19 @@ const QuienesSomos = () => (
   </section>
 );
 
-/* const EjesPrincipales = () => (
-  <section id="ejes-principales" style={styles.ejesPrincipales}>
-    <h2 style={{ fontFamily: "Gotham Bold, sans-serif", marginBottom: "30px" }}>
-      Nuestras Principales Líneas de Trabajo
-    </h2>
-    <div style={styles.ejesGrid}>
-      <div style={styles.ejesItem}>
-        <img
-          src={itemBandera}
-          alt="Alumbrado, Barrido, Limpieza y Movilidad"
-          style={{ width: "50px", height: "auto" }}
-        />
-        <h3 style={styles.ejesTitle}>
-          Alumbrado, Barrido, Limpieza y Movilidad
-        </h3>
-        <p style={styles.ejesContent}>
-          Trabajamos sobre las necesidades de cada uno de los barrios en el
-          cumplimiento de los servicios básicos que debe brindar la
-          municipalidad: la puesta en valor de los espacios públicos y de los
-          accesos a diferentes medios de movilidad y de transporte público, el
-          acceso a los servicios básicos, el mejoramiento de los espacios verdes
-          y otros elementos necesarios y estratégicos que permitan una mejora de
-          la calidad de vida.
-        </p>
-      </div>
-      <div style={styles.ejesItem}>
-        <img
-          src={itemOjo}
-          alt="Identidad Santafesina"
-          style={{ width: "50px", height: "auto" }}
-        />
-        <h3 style={styles.ejesTitle}>Identidad Santafesina</h3>
-        <p style={styles.ejesContent}>
-          Los proyectos legislativos en los que trabajamos están enfocados en
-          proteger y promover la identidad, costumbres y cultura local,
-          reconociendo su importancia como patrimonio vivo. A través de estas
-          iniciativas, buscamos fortalecer el tejido comunitario, fomentando la
-          preservación y disfrute de nuestras tradiciones, reconociendo a
-          diferentes actores culturales, sociales, deportistas e impulsando
-          proyectos que fortalezcan el sector turístico y gastronómico de la
-          ciudad.
-        </p>
-      </div>
-      <div style={styles.ejesItem}>
-        <img
-          src={itemFlecha}
-          alt="Ambiente"
-          style={{ width: "50px", height: "auto" }}
-        />
-        <h3 style={styles.ejesTitle}>Ambiente</h3>
-        <p style={styles.ejesContent}>
-          Con el foco en la sostenibilidad ambiental y el disfrute y cuidado de
-          nuestros entornos naturales, se promueven diversas iniciativas para el
-          uso eficiente de los recursos y de garantizar un entorno saludable
-          para hoy y las generaciones futuras. Desde políticas de gestión de
-          residuos hasta la promoción de energías renovables y espacios verdes,
-          estos proyectos tienen como objetivo transformar la ciudad en un
-          modelo de crecimiento urbano con la protección del medio ambiente.
-        </p>
-      </div>
-    </div>
-  </section>
-); */
-
-const Comunicacion = () => (
-  <section id="comunicacion" style={styles.comunicacionSection}>
-    <div style={styles.comunicacionContent}>
-      <div style={styles.comunicacionInfo}>
-        <h2 style={styles.comunicacionTitle}>
-          Estar Cerca, Estar en Cada Barrio
-        </h2>
-        <p style={styles.comunicacionText}>
-          Con el objetivo de mejorar la comunicación con las y los vecinos de la
-          ciudad hemos creado un canal de comunicación y habilitando un sistema
-          de reclamos que recibimos. Esta herramienta nos permite estar + cerca,
-          contar nuestro trabajo, y mejorar la participación ciudadana.
-        </p>
-        <button style={styles.button}>Ir al Canal de Comunicación</button>
-      </div>
-      <img
-        src={appImg}
-        alt="Canal de Comunicación"
-        style={styles.comunicacionImage}
-      />
-    </div>
-  </section>
-);
-
-const Footer = () => (
+/* const Footer = () => (
   <footer
     style={{
       backgroundColor: "#296ec1",
       color: "white",
       padding: "20px",
+      paddingRight: 50,
+      paddingLeft: 40,
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
       width: "100%",
+      boxSizing: "border-box",
     }}
   >
     <img
@@ -400,15 +317,14 @@ const Footer = () => (
       style={{ width: "100px", height: "auto" }}
     />
   </footer>
-);
+); */
 
 const App = () => {
   return (
     <div
       style={{
         fontFamily: "Gotham Book, sans-serif",
-        width: "100vw",
-
+        width: "100%",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -416,20 +332,33 @@ const App = () => {
       }}
     >
       <Header />
-      <section style={{ maxWidth: 1200 }}>
-        <Landing />
-        <QuienesSomos />
-        <div
-          style={{ backgroundColor: "#fff", paddingBottom: 40, paddingTop: 20 }}
-        >
-          <AccordionUsage />
-        </div>
-
+      <Landing />
+      <QuienesSomos />
+      <section
+        style={{
+          maxWidth: 1400,
+          paddingRight: "8%",
+          paddingLeft: "8%",
+          backgroundColor: "#fff",
+        }}
+      >
+        <AccordionUsage />
         <EjesPrincipales />
         <MapaReclamos />
-        {/*  <Comunicacion /> */}
       </section>
       <Footer />
+      <div
+        style={{
+          display: "flex",
+          padding: 10,
+          backgroundColor: "#296EC1",
+          width: "100%",
+          textAlign: "center",
+          justifyContent: "center",
+        }}
+      >
+        © YO QUIERO SANTA FE. Todos los derechos reservados
+      </div>
     </div>
   );
 };

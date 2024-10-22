@@ -17,6 +17,7 @@ const EjesPrincipales = () => {
       margin: "2px",
       fontSize: "24px",
       fontWeight: "bold",
+      fontSize: "2.5rem",
     },
     subtitle: {
       textAlign: "center",
@@ -50,7 +51,8 @@ const EjesPrincipales = () => {
       textAlign: "center",
       fontSize: "18px",
       fontWeight: "bold",
-      borderBottom: "3px solid #ff4444",
+      borderBottom: "5px solid #ff4444",
+      height: 56,
     },
     cardContent: {
       padding: "20px",
@@ -74,10 +76,11 @@ const EjesPrincipales = () => {
   };
 
   return (
-    <div style={styles.container}>
+    <div id="ejes-principales" style={styles.container}>
       <div style={styles.titleContainer}>
-        <div style={styles.titleText}>NUESTRAS PRINCIPALES</div>
-        <div style={styles.titleText}>LINEAS DE TRABAJO</div>
+        <div style={styles.titleText}>
+          NUESTRAS PRINCIPALES <br /> LINEAS DE TRABAJO
+        </div>
       </div>
 
       <p style={styles.subtitle}>

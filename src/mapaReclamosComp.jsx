@@ -1,142 +1,151 @@
-import React from "react";
+import mapImg from "./assets/RECURSOS/mapa.png";
+import appImg from "./assets/RECURSOS/app.png";
 
 const styles = {
   container: {
-    fontFamily: "Arial, sans-serif",
-    maxWidth: "1200px",
-    margin: "0 auto",
-    padding: "20px",
+    padding: "2rem",
+    fontFamily: "sans-serif",
+    color: "#000",
   },
-  mapSection: {
-    backgroundColor: "#fff",
-    padding: "20px",
-    marginBottom: "20px",
+  section: {
+    display: "flex",
+    flexDirection: "row",
+    gap: "2rem",
+    marginBottom: "3rem",
+    alignItems: "center",
+  },
+  imageWrapper: {
+    position: "relative",
+    width: "50%",
+    maxWidth: "400px",
+  },
+  imageShadowTop: {
+    position: "absolute",
+    top: "0.5rem",
+    left: "0.5rem",
+    width: "100%",
+    height: "100%",
+    // backgroundColor: "#ef4444",
+  },
+  imageShadowBottom: {
+    position: "absolute",
+    top: "-0.5rem",
+    right: "-0.5rem",
+    width: "100%",
+    height: "100%",
+    // backgroundColor: "#ef4444",
+  },
+  image: {
+    width: "100%",
+    height: "auto",
+    borderRadius: "0.5rem",
+    position: "relative",
+    zIndex: 10,
+  },
+  content: {
     display: "flex",
     flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "flex-end", // Esto alineará los elementos a la derecha
+    width: "50%",
   },
   title: {
-    fontSize: "2.5em",
-    marginBottom: "20px",
-  },
-  mapContainer: {
-    display: "flex",
-    alignItems: "flex-end",
-    marginBottom: "20px",
-  },
-  mapImageWrapper: {
-    position: "relative",
-    marginRight: "20px",
-    width: "300px",
-    height: "300px",
-  },
-  mapImage: {
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-    boxShadow: "-10px -10px 0 #ff4d4d",
-  },
-  verMasBtn: {
-    backgroundColor: "#ff4d4d",
-    color: "white",
-    border: "none",
-    padding: "10px 20px",
-    fontSize: "1em",
-    cursor: "pointer",
-    height: "fit-content",
-  },
-  infoSection: {
-    display: "flex",
-    padding: "20px",
-    position: "relative",
-  },
-  textContent: {
-    flex: 1,
-    paddingRight: "20px",
+    fontSize: "3rem",
+    fontWeight: "bold",
+    marginBottom: "1rem",
   },
   subtitle: {
-    fontSize: "2em",
-    color: "black",
-    marginBottom: "20px",
+    fontSize: "1.125rem",
+    marginBottom: "1.5rem",
   },
-  paragraph: {
-    color: "black",
-    marginBottom: "20px",
-  },
-  canalBtn: {
-    backgroundColor: "#4d79ff",
+  button: {
+    backgroundColor: "#ef4444",
     color: "white",
-    border: "none",
-    padding: "10px 20px",
-    fontSize: "1em",
+    padding: "0.5rem 1rem",
+    borderRadius: "0.375rem",
+    alignSelf: "flex-start",
     cursor: "pointer",
+    transition: "background-color 0.3s",
+    border: "none",
+    alignSelf: "flex-end",
   },
-  imageContainer: {
-    flex: 1,
+  bottomSection: {
     display: "flex",
-    justifyContent: "center",
+    flexDirection: "row",
+    gap: "2rem",
+    padding: "2rem",
     alignItems: "center",
-    position: "relative",
-    width: "300px",
-    height: "400px",
   },
-  phoneImage: {
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-    position: "relative",
-    zIndex: 1,
+  bottomContent: {
+    color: "black",
+    width: "50%",
   },
-  backgroundBox: {
-    position: "absolute",
-    top: "-20px",
-    left: "20px",
-    right: "-20px",
-    bottom: "20px",
-    backgroundColor: "#ff4d4d",
-    zIndex: 0,
+  bottomTitle: {
+    fontSize: "2.25rem",
+    fontWeight: "bold",
+    marginBottom: "1rem",
+  },
+  bottomText: {
+    marginBottom: "1.5rem",
+  },
+  blueButton: {
+    backgroundColor: "#2563eb",
+    color: "white",
+    padding: "0.5rem 1rem",
+    borderRadius: "0.375rem",
+    cursor: "pointer",
+    transition: "background-color 0.3s",
+    border: "none",
   },
 };
 
 export default function MapaReclamos() {
   return (
-    <div style={styles.container}>
-      <div style={styles.mapSection}>
-        <h1 style={styles.title}>MAPA DE RECLAMOS</h1>
-        <div style={styles.mapContainer}>
-          <div style={styles.mapImageWrapper}>
-            <img
-              src="/placeholder.svg?height=300&width=300"
-              alt="Mapa de reclamos"
-              style={styles.mapImage}
-            />
-          </div>
-          <button style={styles.verMasBtn}>Ver más</button>
+    <div id="mapa-reclamos" style={styles.container}>
+      <div style={styles.section}>
+        <div style={styles.imageWrapper}>
+          {/*  <div style={styles.imageShadowTop} /> */}
+          <img
+            src={mapImg}
+            width={400}
+            height={400}
+            alt="Mapa de reclamos"
+            style={styles.image}
+          />
         </div>
-        <p style={styles.paragraph}>INFO BREVE SOBRE ESTO SFHDSKJFLSAKFLDSM</p>
+        <div style={styles.content}>
+          <h1 style={styles.title}>MAPA DE RECLAMOS</h1>
+          <p style={styles.subtitle}>INFO BREVE SOBRE ESTO SFHDSKJFLSAKFLDSM</p>
+          <button style={styles.button}>Ver más</button>
+        </div>
       </div>
-      <div style={styles.infoSection}>
-        <div style={styles.textContent}>
-          <h2 style={styles.subtitle}>
+
+      <div style={styles.bottomSection}>
+        <div style={styles.bottomContent}>
+          <h2 style={styles.bottomTitle}>
             ESTAR CERCA,
             <br />
             ESTAR EN CADA
             <br />
             BARRIO
           </h2>
-          <p style={styles.paragraph}>
+          <div style={{ borderBottom: "2px solid black", width: 120 }}></div>
+          <p style={styles.bottomText}>
             Con el objetivo de mejorar la comunicación con las y los vecinos de
             la ciudad hemos creado un canal de comunicación y visibilización de
             los reclamos que recibimos. Esta herramienta nos permite estar +
             cerca, contar nuestro trabajo, y mejorar la participación ciudadana.
           </p>
-          <button style={styles.canalBtn}>IR AL CANAL DE COMUNICACIÓN</button>
+          <button style={styles.blueButton}>IR AL CANAL DE COMUNICACIÓN</button>
         </div>
-        <div style={styles.imageContainer}>
-          <div style={styles.backgroundBox}></div>
+        <div style={styles.imageWrapper}>
+          <div style={styles.imageShadowBottom} />
           <img
-            src="/placeholder.svg?height=400&width=300"
+            src={appImg}
+            width={400}
+            height={400}
             alt="Smartphone con aplicación"
-            style={styles.phoneImage}
+            style={styles.image}
           />
         </div>
       </div>
