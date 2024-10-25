@@ -114,8 +114,10 @@ export default function MapaReclamos() {
           />
         </div>
         <div style={styles.content}>
-          <h1 style={styles.title}>MAPA DE RECLAMOS</h1>
-          <p style={styles.subtitle}>INFO BREVE SOBRE ESTO SFHDSKJFLSAKFLDSM</p>
+          <h1 style={styles.title}>
+            MAPA INTERACTIVO Y COLABORATIVO DE RECLAMOS
+          </h1>
+          <p style={styles.subtitle}></p>
           <button style={styles.button}>Ver más</button>
         </div>
       </div>

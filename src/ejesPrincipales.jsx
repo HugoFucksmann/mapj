@@ -15,9 +15,8 @@ const EjesPrincipales = () => {
       color: "white",
       padding: "5px 15px",
       margin: "2px",
-      fontSize: "24px",
-      fontWeight: "bold",
       fontSize: "2.5rem",
+      fontWeight: "bold",
     },
     subtitle: {
       textAlign: "center",
@@ -34,9 +33,8 @@ const EjesPrincipales = () => {
       justifyContent: "center",
     },
     card: {
-      flex: "1",
-      minWidth: "300px",
-      maxWidth: "380px",
+      flex: "0 0 calc(50% - 20px)", // Dos tarjetas por fila
+      maxWidth: "360px",
       borderRadius: "12px",
       overflow: "hidden",
       boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
@@ -125,6 +123,22 @@ const EjesPrincipales = () => {
               diferentes actores culturales, sociales, deportistas e impulsando
               proyectos que fortalezcan al sector turístico y gastronómico de la
               ciudad.
+            </div>
+            <div style={styles.cardLine} />
+          </div>
+        </div>
+
+        <div style={styles.card}>
+          <div style={styles.cardHeader}>TRABAJO, PRODUCCIÓN E INDUSTRIA</div>
+          <div style={styles.cardContent}>
+            <div style={styles.cardText}>
+              Es esencial potenciar la capacidad productiva y
+              científico-tecnológica de la ciudad, creando un entorno atractivo
+              para inversores y nuevas industrias fortaleciendo la
+              competitividad regional, siendo crucial que se apoye la
+              colaboración entre la academia y la industria. Se necesita,
+              además, un Estado presente para acompañar el crecimiento de la
+              economía social, institucionalizando sus procesos.
             </div>
             <div style={styles.cardLine} />
           </div>

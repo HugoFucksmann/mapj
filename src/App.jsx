@@ -1,17 +1,10 @@
-/* eslint-disable no-unused-vars */
-import logoFooter from "./assets/RECURSOS/logofooter.png";
 import logoheader from "./assets/RECURSOS/logoheader.png";
 import landingImg from "./assets/landing.jpg";
-import quienesSomos from "./assets/RECURSOS/quienesSomos.png";
-import logoquienessomos from "./assets/RECURSOS/logoquienessomos.png";
-import imgFb from "./assets/RECURSOS/fb.png";
-import imgIg from "./assets/RECURSOS/ig.png";
-import imgTw from "./assets/RECURSOS/tw.png";
-import puenteFooter from "./assets/RECURSOS/puentefooter.png";
 import AccordionUsage from "./acordeon";
 import MapaReclamos from "./mapaReclamosComp";
 import EjesPrincipales from "./ejesPrincipales";
 import Footer from "./footer";
+import QuienesSomos from "./quienesSomos";
 
 const styles = {
   header: {
@@ -235,7 +228,7 @@ const Landing = () => (
   </section>
 );
 
-const QuienesSomos = () => (
+/* const QuienesSomos = () => (
   <section
     id="quienes-somos"
     style={{
@@ -269,54 +262,6 @@ const QuienesSomos = () => (
       style={styles.quienesSomosImage}
     />
   </section>
-);
-
-/* const Footer = () => (
-  <footer
-    style={{
-      backgroundColor: "#296ec1",
-      color: "white",
-      padding: "20px",
-      paddingRight: 50,
-      paddingLeft: 40,
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-      width: "100%",
-      boxSizing: "border-box",
-    }}
-  >
-    <img
-      src={logoFooter}
-      alt="Yo Quiero Santa Fe"
-      style={{ width: "150px", height: "auto" }}
-    />
-    <div>
-      <p>Síguenos en redes sociales:</p>
-      <div style={{ display: "flex", gap: "10px" }}>
-        <img
-          src={imgFb}
-          alt="Facebook"
-          style={{ width: "30px", height: "auto" }}
-        />
-        <img
-          src={imgIg}
-          alt="Instagram"
-          style={{ width: "30px", height: "auto" }}
-        />
-        <img
-          src={imgTw}
-          alt="Twitter"
-          style={{ width: "30px", height: "auto" }}
-        />
-      </div>
-    </div>
-    <img
-      src={puenteFooter}
-      alt="Puente"
-      style={{ width: "100px", height: "auto" }}
-    />
-  </footer>
 ); */
 
 const App = () => {
