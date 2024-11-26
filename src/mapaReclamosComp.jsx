@@ -63,7 +63,7 @@ const styles = {
     color: "white",
     padding: "0.5rem 1rem",
     borderRadius: "0.375rem",
-    alignSelf: "flex-start",
+    // alignSelf: "flex-start",
     cursor: "pointer",
     transition: "background-color 0.3s",
     border: "none",

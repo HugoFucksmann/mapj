@@ -5,6 +5,7 @@ import MapaReclamos from "./mapaReclamosComp";
 import EjesPrincipales from "./ejesPrincipales";
 import Footer from "./footer";
 import QuienesSomos from "./quienesSomos";
+import Particles from "./p2";
 
 const styles = {
   header: {
@@ -265,47 +266,7 @@ const Landing = () => (
 ); */
 
 const App = () => {
-  return (
-    <div
-      style={{
-        fontFamily: "Gotham Book, sans-serif",
-        width: "100%",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Header />
-      <Landing />
-      <QuienesSomos />
-      <section
-        style={{
-          maxWidth: 1400,
-          paddingRight: "8%",
-          paddingLeft: "8%",
-          backgroundColor: "#fff",
-        }}
-      >
-        <AccordionUsage />
-        <EjesPrincipales />
-        <MapaReclamos />
-      </section>
-      <Footer />
-      <div
-        style={{
-          display: "flex",
-          padding: 10,
-          backgroundColor: "#296EC1",
-          width: "100%",
-          textAlign: "center",
-          justifyContent: "center",
-        }}
-      >
-        © YO QUIERO SANTA FE. Todos los derechos reservados
-      </div>
-    </div>
-  );
+  return <Particles />;
 };
 
 export default App;
