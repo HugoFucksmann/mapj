@@ -17,6 +17,7 @@ const EjesPrincipales = () => {
       margin: "2px",
       fontSize: "2.5rem",
       fontWeight: "bold",
+      borderRadius: 8,
     },
     subtitle: {
       textAlign: "center",
@@ -60,6 +61,8 @@ const EjesPrincipales = () => {
       flex: 1,
       display: "flex",
       flexDirection: "column",
+      maxHeight: 240,
+      overflow: "auto",
     },
     cardText: {
       marginBottom: "20px",
@@ -71,7 +74,80 @@ const EjesPrincipales = () => {
       backgroundColor: "#000",
       margin: "0 auto",
     },
+    list: {
+      listStyleType: "none",
+      paddingLeft: "0",
+    },
+    listItem: {
+      marginBottom: "10px",
+      paddingLeft: "20px",
+      position: "relative",
+    },
+    listItemDot: {
+      content: '""',
+      position: "absolute",
+      left: "0",
+      top: "8px",
+      width: "6px",
+      height: "6px",
+      backgroundColor: "#4277ca",
+      borderRadius: "50%",
+    },
   };
+
+  const cardContents = [
+    {
+      title: "ALUMBRADO, BARRIDO, LIMPIEZA Y MOVILIDAD",
+      items: [
+        "Bacheo y reparación de carpeta asfáltica",
+        "Colocación de reductores de velocidad",
+        "Colocación y reparación de luminaria",
+        "Erradicación de microbasurales",
+        "Puestas en valor de espacios verdes públicos",
+        "Desmalezamiento/limpieza",
+        "Colocación de garita de colectivos",
+        "Servicio Especializado de Transporte para Personas con Discapacidad",
+        "Día de la Seguridad Vial con campaña de concientización",
+        "Campaña informativa sobre el estacionamiento medido - SEOM",
+        "Cupo Femenino en licencias de taxis",
+        "Regulación del servicio de transporte privado de pasajeros",
+        "Constitución de Mesa de Trabajo sobre subsistema Taxis/Remises",
+      ],
+    },
+    {
+      title: "IDENTIDAD SANTAFESINA",
+      items: [
+        "Circuito Placas de Deportistas Santafesinos",
+        "Programa Me Pinta Santa Fe - murales de mi ciudad",
+        "Paseo Sur del Brigadier",
+        "Circuito Gastronómico Sur a cielo abierto",
+        "Bajada Pública de Embarcaciones",
+        "Muelle en el Lago Gral. Belgrano del Parque del Sur",
+        "Distinción Destacados de la Cumbia",
+        "Monumento al Liso y a la Chopera",
+      ],
+    },
+    {
+      title: "TRABAJO, PRODUCCIÓN E INDUSTRIA",
+      items: [
+        "Plan de Fomento de Polos Gastronómicos",
+        "Institucionalización de Ferias Santafesinas",
+        "Programa Fondo para el Desarrollo Productivo y Laboral",
+        "Líneas de trabajo para el fortalecimiento de la industria del turismo",
+      ],
+    },
+    {
+      title: "AMBIENTE",
+      items: [
+        "Plan Sello Verde Santa Fe para el sector productivo",
+        "Regulación y control de Aceites Vegetales Usados",
+        "Incorporación de cestos para colillas en espacios verdes públicos",
+        "Programa Municipal de Compostaje",
+        "Programa de despapelización y firma digital en el HCM",
+        "Campaña de Concientización sobre el cuidado y la preservación de las aguas de ríos y lagunas",
+      ],
+    },
+  ];
 
   return (
     <div id="ejes-principales" style={styles.container}>
@@ -82,85 +158,37 @@ const EjesPrincipales = () => {
       </div>
 
       <p style={styles.subtitle}>
-        Desde el año 2019 hemos presentado más de 1400 proyectos vinculados a
-        diferentes problemáticas de nuestra ciudad, entre los que destacan los
-        siguientes ejes:
+        Es esencial potenciar la capacidad productiva y científica-tecnológica
+        de la ciudad, creando un entorno atractivo para inversores y nuevas
+        industrias fortaleciendo la competitividad regional, siendo crucial que
+        se apoye la colaboración entre la academia y la industria. Se necesita,
+        además, un Estado presente para acompañar el crecimiento de la economía
+        social, institucionalizando sus procesos.
       </p>
 
       <div style={styles.cardsContainer}>
-        <div style={styles.card}>
-          <div style={styles.cardHeader}>
-            ALUMBRADO, BARRIDO,
-            <br />
-            LIMPIEZA Y MOVILIDAD
-          </div>
-          <div style={styles.cardContent}>
-            <div style={styles.cardText}>
-              Trabajamos sobre las necesidades de cada uno de los barrios en el
-              cumplimiento de los servicios básicos que debe brindar la
-              municipalidad, la puesta en valor de espacios públicos y de los
-              barrios de nuestra ciudad, el acceso a diferentes medios de
-              movilidad y las obras públicas necesarias y estratégicas que
-              permitan una mejora de la calidad de vida.
+        {cardContents.map((card, index) => (
+          <div key={index} style={styles.card}>
+            <div style={styles.cardHeader}>{card.title}</div>
+            <div style={styles.cardContent}>
+              <div style={styles.cardText}>
+                <ul style={styles.list}>
+                  {card.items.map((item, itemIndex) => (
+                    <li key={itemIndex} style={styles.listItem}>
+                      <span style={styles.listItemDot}></span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div style={styles.cardLine} />
             </div>
-            <div style={styles.cardLine} />
           </div>
-        </div>
-
-        <div style={styles.card}>
-          <div style={styles.cardHeader}>
-            IDENTIDAD
-            <br />
-            SANTAFESINA
-          </div>
-          <div style={styles.cardContent}>
-            <div style={styles.cardText}>
-              Los proyectos legislativos en los que trabajamos están enfocados
-              en proteger y promover la identidad y cultura local, reconociendo
-              su importancia como patrimonio vivo. A través de estas
-              iniciativas, buscamos fortalecer el tejido comunitario, fomentando
-              la preservación y disfrute de nuestras costumbres, reconociendo a
-              diferentes actores culturales, sociales, deportistas e impulsando
-              proyectos que fortalezcan al sector turístico y gastronómico de la
-              ciudad.
-            </div>
-            <div style={styles.cardLine} />
-          </div>
-        </div>
-
-        <div style={styles.card}>
-          <div style={styles.cardHeader}>TRABAJO, PRODUCCIÓN E INDUSTRIA</div>
-          <div style={styles.cardContent}>
-            <div style={styles.cardText}>
-              Es esencial potenciar la capacidad productiva y
-              científico-tecnológica de la ciudad, creando un entorno atractivo
-              para inversores y nuevas industrias fortaleciendo la
-              competitividad regional, siendo crucial que se apoye la
-              colaboración entre la academia y la industria. Se necesita,
-              además, un Estado presente para acompañar el crecimiento de la
-              economía social, institucionalizando sus procesos.
-            </div>
-            <div style={styles.cardLine} />
-          </div>
-        </div>
-
-        <div style={styles.card}>
-          <div style={styles.cardHeader}>AMBIENTE</div>
-          <div style={styles.cardContent}>
-            <div style={styles.cardText}>
-              Con el foco en la sostenibilidad ambiental y en el disfrute y
-              cuidado de nuestros entornos naturales, se promueven diversas
-              iniciativas en pos del uso eficiente de los recursos y de
-              garantizar un entorno saludable para los y las santafesinas. Desde
-              políticas de gestión de residuos hasta la promoción de energías
-              renovables y espacios verdes, estos proyectos tienen como objetivo
-              transformar la ciudad en un modelo de sostenibilidad que equilibre
-              el crecimiento urbano con la protección del medio ambiente.
-            </div>
-            <div style={styles.cardLine} />
-          </div>
-        </div>
+        ))}
       </div>
+      <p style={{ textAlign: "center", color: "black", fontSize: "1.2em" }}>
+        Los proyectos presentados se pueden ver en nuestro MAPA DE RECLAMOS.
+      </p>
     </div>
   );
 };

@@ -1,10 +1,10 @@
 import logoheader from "./assets/RECURSOS/logoheader.png";
-import landingImg from "./assets/landing.jpg";
+
 import AccordionUsage from "./acordeon";
 import MapaReclamos from "./mapaReclamosComp";
 import EjesPrincipales from "./ejesPrincipales";
 import Footer from "./footer";
-import QuienesSomos from "./quienesSomos";
+import Carousel from "./carrousel";
 
 const styles = {
   header: {
@@ -182,9 +182,6 @@ const Header = () => (
   <header style={styles.header}>
     <img src={logoheader} alt="Yo Quiero Santa Fe" style={styles.logo} />
     <nav style={styles.nav}>
-      <a href="#quienes-somos" style={styles.navLink}>
-        Quienes Somos
-      </a>
       <a href="#ejes-principales" style={styles.navLink}>
         Ejes Principales
       </a>
@@ -197,72 +194,6 @@ const Header = () => (
     </nav>
   </header>
 );
-
-const Landing = () => (
-  <section
-    id="landing"
-    style={{
-      height: "90vh",
-      ...styles.landing,
-      backgroundImage: `url(${landingImg})`,
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "flex-end",
-      alignItems: "center",
-      width: "100%",
-    }}
-  >
-    <h2
-      style={{
-        paddingRight: "10%",
-        paddingBottom: 60,
-        paddingLeft: "10%",
-        backgroundColor: "rgba(0, 0, 0, 0.07)",
-        maxWidth: 900,
-      }}
-    >
-      Yo Quiero Santa Fe es una apuesta generacional para liderar los desafíos
-      de nuestra ciudad con el proposito de construir una nueva forma de hacer
-      las cosas generando consensos.
-    </h2>
-  </section>
-);
-
-/* const QuienesSomos = () => (
-  <section
-    id="quienes-somos"
-    style={{
-      ...styles.sectionQS,
-      ...styles.quienesSomos,
-      backgroundColor: "#ddd",
-    }}
-  >
-    <div style={styles.quienesSomosText}>
-      <h2 style={{ color: "#545454" }}>Quienes Somos</h2>
-      <p style={{ color: "#5B5B5B" }}>
-        Nos reunimos desde distintos espacios, asociaciones y con diversas
-        trayectorias en lo profesional, productivo, empresarial, académico y
-        cultural porque creemos que es el momento de que tomemos la posta , de
-        dar el salto generacional, para hacer de Santa Fe: Una ciudad
-        protagonista. Una ciudad para disfrutar.
-      </p>
-      <p style={{ color: "#5B5B5B" }}>
-        Vinimos a realizar un cambio significativo en la manera de hacer las
-        cosas, tomando lo mejor de las experiencias previas e innovando.
-      </p>
-      <img
-        src={logoquienessomos}
-        alt="Quienes Somos"
-        style={styles.logoFooter}
-      />
-    </div>
-    <img
-      src={quienesSomos}
-      alt="Quienes Somos"
-      style={styles.quienesSomosImage}
-    />
-  </section>
-); */
 
 const App = () => {
   return (
@@ -277,8 +208,7 @@ const App = () => {
       }}
     >
       <Header />
-      <Landing />
-      <QuienesSomos />
+      <Carousel />
       <section
         style={{
           maxWidth: 1400,

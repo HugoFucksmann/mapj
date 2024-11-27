@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import itemBandera from "./assets/RECURSOS/iconobandera.png";
 import itemOjo from "./assets/RECURSOS/iconoojo.png";
 import itemFlecha from "./assets/RECURSOS/iconoflecha.png";
+import quienesSomosImage from "./assets/RECURSOS/quienesSomos.png";
 
 export default function Accordion() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -24,6 +25,18 @@ export default function Accordion() {
       title: "Enfoque",
       content:
         "Una nueva forma de hacer las cosas generando diálogo, consensos y acuerdos. Nuestra plataforma propone volver a la cercanía entre el municipio y la gente, donde todos seamos protagonistas, potenciando la ciudad y su marca: la Identidad SANTAFESINA. Nuestro enfoque se basa en escuchar a quienes están haciendo y creando, en trabajar juntos para desarrollar soluciones que respondan a las verdaderas necesidades de la ciudad. Creemos en la participación activa de emprendedores, empresarios, productores, asociaciones, clubes, así como estudiantes, investigadores y agentes de la cultura, el arte y el deporte. Cada uno de ellos y ellas son protagonistas esenciales en la construcción de nuestra ciudad, porque son la ciudad; la viven, la habitan, la transitan, la trabajan, la crean y la disfrutan.",
+    },
+    {
+      icon: itemFlecha,
+      title: "Quienes somos",
+      content: ` Nos reunimos desde distintos espacios, asociaciones y con diversas
+              trayectorias en lo profesional, productivo, empresarial, académico
+              y cultural porque creemos que es el momento de que tomemos la
+              posta , de dar el salto generacional, para hacer de Santa Fe: Una
+              ciudad protagonista. Una ciudad para disfrutar.  Vinimos a realizar un cambio significativo en la manera de hacer
+              las cosas, tomando lo mejor de las experiencias previas e
+              innovando.`,
+      image: quienesSomosImage,
     },
   ];
 
@@ -69,7 +82,22 @@ export default function Accordion() {
             </span>
           </div>
           {activeIndex === index && (
-            <div style={styles.content}>{item.content}</div>
+            <div style={item.image ? styles.contentWithImage : styles.content}>
+              {item.image ? (
+                <>
+                  <div style={styles.imageColumn}>
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      style={styles.quienesSomosImage}
+                    />
+                  </div>
+                  <div style={styles.textColumn}>{item.content}</div>
+                </>
+              ) : (
+                item.content
+              )}
+            </div>
           )}
         </div>
       ))}
@@ -80,7 +108,6 @@ export default function Accordion() {
 const styles = {
   accordion: {
     width: "80%",
-
     margin: "40px auto",
     color: "black",
   },
@@ -113,5 +140,24 @@ const styles = {
     backgroundColor: "#f5f5f5",
     borderRadius: 8,
     marginBottom: 30,
+  },
+  contentWithImage: {
+    display: "flex",
+    padding: "18px",
+    backgroundColor: "#f5f5f5",
+    borderRadius: 8,
+    marginBottom: 30,
+  },
+  imageColumn: {
+    flex: 1,
+    marginRight: "18px",
+  },
+  textColumn: {
+    flex: 1,
+  },
+  quienesSomosImage: {
+    width: "100%",
+    height: "auto",
+    borderRadius: 8,
   },
 };

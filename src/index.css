@@ -30,3 +30,22 @@ body {
   display: flex;
   place-items: center;
 }
+
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 8px; /* Tamaño de la barra */
+  height: 8px; /* Tamaño para barras horizontales */
+}
+
+/* Estilo para el pulgar (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del pulgar */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 2px solid #ccc; /* Borde alrededor del pulgar */
+}
+
+/* Estilo para la pista (el área donde se mueve el pulgar) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color de la pista */
+  border-radius: 10px; /* Bordes redondeados */
+}

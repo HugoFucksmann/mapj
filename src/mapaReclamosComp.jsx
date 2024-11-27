@@ -67,7 +67,6 @@ const styles = {
     cursor: "pointer",
     transition: "background-color 0.3s",
     border: "none",
-    alignSelf: "flex-end",
   },
   bottomSection: {
     display: "flex",
@@ -114,10 +113,21 @@ export default function MapaReclamos() {
           />
         </div>
         <div style={styles.content}>
-          <h1 style={styles.title}>
-            MAPA INTERACTIVO Y COLABORATIVO DE RECLAMOS
-          </h1>
-          <p style={styles.subtitle}></p>
+          <h1 style={styles.title}>MAPA INTERACTIVO DE RECLAMOS</h1>
+          <p style={styles.subtitle}>
+            Proyectos de Resolución sobre INFRAESTRUCTURA URBANA (bacheo,
+            luminaria, recolección de residuos, entre otros) que fueron
+            presentados en el Honorable Concejo Municipal desde noviembre del
+            2019 a la fecha, gracias al aporte de vecinos y vecinas.
+          </p>
+          <p>
+            En ROSADO los proyectos en trámite que NO se han aprobado todavía.
+            En AZUL los proyectos aprobados que se encuentran en el Departamento
+            Ejecutivo Municipal para su estudio y ejecución. Estas solicitudes
+            no tienen una resolución directa y efectiva sobre el problema
+            destacado, ya que dependerá de la factibilidad que el Ejecutivo
+            Municipal considere para su ejecución.
+          </p>
           <button style={styles.button}>Ver más</button>
         </div>
       </div>
