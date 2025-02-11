@@ -117,7 +117,7 @@ const EjesPrincipales = () => {
       ],
     },
     {
-      title: "IDENTIDAD SANTAFESINA",
+      title: "SANTAFESINIDAD",
       items: [
         "Circuito Placas de Deportistas Santafesinos",
         "Programa Me Pinta Santa Fe - murales de mi ciudad",

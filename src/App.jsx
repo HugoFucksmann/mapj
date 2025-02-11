@@ -182,15 +182,15 @@ const Header = () => (
   <header style={styles.header}>
     <img src={logoheader} alt="Yo Quiero Santa Fe" style={styles.logo} />
     <nav style={styles.nav}>
-      <a href="#ejes-principales" style={styles.navLink}>
-        Ejes Principales
+      <a href="#Noticias" style={styles.navLink}>
+      Noticias
       </a>
-      <a href="#mapa-reclamos" style={styles.navLink}>
-        Mapa de Reclamos
+      <a href="#Propuestas" style={styles.navLink}>
+      Propuestas
       </a>
-      {/*  <a href="#comunicacion" style={styles.navLink}>
-        Contacto
-      </a> */}
+       <a href="#Mapa" style={styles.navLink}>
+        Mapa de reclamos
+      </a>
     </nav>
   </header>
 );
@@ -209,6 +209,7 @@ const App = () => {
     >
       <Header />
       <Carousel />
+     
       <section
         style={{
           maxWidth: 1400,
@@ -217,6 +218,11 @@ const App = () => {
           backgroundColor: "#fff",
         }}
       >
+         <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }} >
+        <h2 style={{  color: "black", margin: "auto" }}>
+        “JUSTA, LIBRE Y SOBERANA”
+        </h2>
+      </div>
         <AccordionUsage />
         <EjesPrincipales />
         <MapaReclamos />
