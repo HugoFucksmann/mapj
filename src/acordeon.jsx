@@ -12,30 +12,38 @@ export default function Accordion() {
       icon: itemBandera,
       title: "Liderazgo",
       content:
-        "Jorgelina Mudallel, concejala de la ciudad de Santa Fe,y el concejal  Jorge Andres Fernandez son los referentes de este proyecto que reúne a emprendedores, empresarios, científicos, artistas y ciudadanos comprometidos con el desarrollo de nuestra comunidad. Su experiencia y compromiso son fundamentales para guiar esta iniciativa hacia un cambio verdadero con espiritu transgresor, basado en la cercanía, la innovación y el trabajo colectivo.",
+        `
+        Los concejales Jorgelina Mudallel y Jorge Andrés Fernández de la ciudad de Santa Fe son los principales impulsores de un proyecto innovador que busca transformar la realidad local a través de la colaboración entre emprendedores, empresarios, científicos, artistas y ciudadanos comprometidos con el desarrollo de la comunidad. Su liderazgo y dedicación son clave para guiar esta iniciativa hacia un cambio auténtico, fundamentado en principios de cercanía, innovación y trabajo colectivo.
+        Con una sólida experiencia en la gestión pública, ambos concejales tienen un claro objetivo: promover un cambio real y sostenido, apostando por soluciones creativas y disruptivas. Este proyecto no solo desafía los límites tradicionales, sino que también pone énfasis en la construcción de un futuro más inclusivo y participativo para todos los santafesinos y santafesinas.
+        Esta propuesta se basa en la cercanía con vecinos y vecinas, escuchando sus necesidades y generando espacios para que todos puedan involucrarse. más, se busca fomentar el trabajo conjunto entre diferentes sectores, fortaleciendo el tejido social y económico de la ciudad.
+        A través de este esfuerzo colectivo, se pretende crear un entorno propicio para la innovación, el desarrollo económico y el bienestar social, con la convicción de que el trabajo mancomunado y el compromiso de cada actor social son la clave para alcanzar una Santa Fe más próspera y equitativa.
+
+        `,
     },
     {
       icon: itemOjo,
       title: "Propósito",
       content:
-        "Estamos convencidos de que necesitamos un cambio significativo en la forma de gestionar la ciudad. Para nosotros un nuevo impulso generacional, lejos de ser un limite etario es un salto hacia la innovación, un modo disruptivo de gestion haciendonos cargo de los problemas y desafios de la ciudad.  En los 17 años que gobierna el mismo frente vemos una ciudad cada vez más desigual y desintegrada. Hoy Santa Fe es la sexta ciudad más pobre del país, arriba del Gran Rosario y el gran Buenos Aires. Una ciudad protagonista, una ciudad para crecer, emprender, trabajar, pero también para disfrutar y cumplir sueños. Santa Fe tiene todo para ser protagonista hoy: desde su riqueza natural, con su paisaje costero y su entorno único, hasta la capacidad y el talento de su gente.",
+      `
+Estamos convencidos de que es urgente un cambio profundo en la forma de gestionar nuestra ciudad. Para nosotros, el impulso de una nueva generación no se limita a una cuestión de edad, sino que es una oportunidad para promover la innovación y una gestión pública renovada, capaz de abordar de manera eficaz los problemas y desafíos que enfrenta Santa Fe.
+Tras 18 años de un mismo frente de gobierno hemos visto cómo nuestra ciudad se ha vuelto cada vez más desigual y desintegrada. Hoy Santa Fe ocupa el triste lugar de la sexta ciudad más pobre del país, superando incluso a áreas de gran concentración urbana como el Gran Rosario y el Gran Buenos Aires. Esto no refleja el potencial real de nuestra ciudad.
+Santa Fe tiene todo para ser una ciudad protagonista: es un lugar con una gran capacidad para crecer, emprender, trabajar, y también para disfrutar y cumplir sueños. Su riqueza natural, con paisajes costeros únicos y un entorno privilegiado, se complementa con el talento, la creatividad y la energía de su gente. Es momento de aprovechar todo este potencial y transformar Santa Fe en una ciudad más justa, próspera y dinámica.
+      `,
     },
     {
       icon: itemFlecha,
       title: "Enfoque",
       content:
-        "Una nueva forma de hacer las cosas generando diálogo, consensos y acuerdos. Nuestra plataforma propone volver a la cercanía entre el municipio y la gente, donde todos seamos protagonistas, potenciando la ciudad y su marca: la Identidad SANTAFESINA. Nuestro enfoque se basa en escuchar a quienes están haciendo y creando, en trabajar juntos para desarrollar soluciones que respondan a las verdaderas necesidades de la ciudad. Creemos en la participación activa de emprendedores, empresarios, productores, asociaciones, clubes, así como estudiantes, investigadores y agentes de la cultura, el arte y el deporte. Cada uno de ellos y ellas son protagonistas esenciales en la construcción de nuestra ciudad, porque son la ciudad; la viven, la habitan, la transitan, la trabajan, la crean y la disfrutan.",
-    },
+      `
+Proponemos una nueva forma de gestionar, donde la identidad santafesina sea el eje central de todo lo que hagamos. Creemos que una ciudad que no solo se define por su territorio, sino por su gente, su historia y su cultura. Potenciar la identidad santafesina es recuperar el orgullo local y fortalecer los lazos que nos unen, para que todos juntos seamos protagonistas del futuro de nuestra ciudad.
+Nuestra propuesta se basa en la participación activa de todos los sectores de la sociedad. Emprendedores, empresarios, comerciantes, productores, asociaciones, clubes, estudiantes, investigadores, y todos los agentes del arte, la cultura y el deporte, tienen un rol fundamental en el desarrollo de Santa Fe. Cada uno de ellos aporta su experiencia y su visión, y es esencial que trabajemos de manera conjunta para construir soluciones que respondan a las verdaderas necesidades de la ciudad. Creemos que la ciudad se construye de abajo hacia arriba, con la participación de todos quienes la viven y la transforman.
+      `,    },
     {
       icon: itemFlecha,
       title: "Quienes somos",
-      content: ` Nos reunimos desde distintos espacios, asociaciones y con diversas
-              trayectorias en lo profesional, productivo, empresarial, académico
-              y cultural porque creemos que es el momento de que tomemos la
-              posta , de dar el salto generacional, para hacer de Santa Fe: Una
-              ciudad protagonista. Una ciudad para disfrutar.  Vinimos a realizar un cambio significativo en la manera de hacer
-              las cosas, tomando lo mejor de las experiencias previas e
-              innovando.`,
+      content: `Nos reunimos con un objetivo común: hacer de Santa Fe una ciudad protagonista. Creemos que, para lograrlo, es fundamental contar con la participación activa de los distintos sectores de nuestra comunidad: profesionales, emprendedores, comerciantes, empresarios, académicos, productores, artistas y ciudadanos comprometidos. Cada uno de estos actores tiene una visión valiosa y, al trabajar juntos, podemos potenciar el desarrollo de nuestra ciudad, asegurando que todos seamos parte activa del cambio. Una ciudad protagonista es aquella donde todos sus habitantes tienen la oportunidad de crecer, disfrutar y ser parte de su transformación.
+Venimos con la mirada fresca de nuevas generaciones, dispuestos a trabajar de manera colectiva para abordar los desafíos actuales. Sabemos que, para lograr un cambio profundo, es necesario sumar esfuerzos, escuchar a todos los actores y aprender de las experiencias previas. Rescatamos lo mejor de lo que se ha hecho, pero con el firme compromiso de innovar y proponer nuevas soluciones que respondan a las verdaderas necesidades de Santa Fe, siempre con el trabajo conjunto como base para alcanzar un futuro mejor.
+`,
       image: quienesSomosImage,
     },
   ];

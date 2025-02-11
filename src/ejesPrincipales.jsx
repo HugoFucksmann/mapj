@@ -7,7 +7,8 @@ const EjesPrincipales = () => {
     },
     titleContainer: {
       textAlign: "center",
-      marginBottom: "20px",
+      marginBottom: "40px",
+      marginTop: "60px",
     },
     titleText: {
       display: "inline-block",
@@ -101,6 +102,7 @@ const EjesPrincipales = () => {
       items: [
         "Bacheo y reparación de carpeta asfáltica",
         "Colocación de reductores de velocidad",
+        "Mesa de ordenamiento vial urbano",
         "Colocación y reparación de luminaria",
         "Erradicación de microbasurales",
         "Puestas en valor de espacios verdes públicos",
@@ -157,14 +159,7 @@ const EjesPrincipales = () => {
         </div>
       </div>
 
-      <p style={styles.subtitle}>
-        Es esencial potenciar la capacidad productiva y científica-tecnológica
-        de la ciudad, creando un entorno atractivo para inversores y nuevas
-        industrias fortaleciendo la competitividad regional, siendo crucial que
-        se apoye la colaboración entre la academia y la industria. Se necesita,
-        además, un Estado presente para acompañar el crecimiento de la economía
-        social, institucionalizando sus procesos.
-      </p>
+     
 
       <div style={styles.cardsContainer}>
         {cardContents.map((card, index) => (
@@ -186,9 +181,7 @@ const EjesPrincipales = () => {
           </div>
         ))}
       </div>
-      <p style={{ textAlign: "center", color: "black", fontSize: "1.2em" }}>
-        Los proyectos presentados se pueden ver en nuestro MAPA DE RECLAMOS.
-      </p>
+     
     </div>
   );
 };

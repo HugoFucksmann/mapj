@@ -1,4 +1,4 @@
-import React from "react";
+
 import logoFooter from "./assets/RECURSOS/logofooter.png";
 import imgFb from "./assets/RECURSOS/fb.png";
 import imgIg from "./assets/RECURSOS/ig.png";
@@ -50,6 +50,7 @@ const Footer = () => {
       height: "30px",
       objectFit: "contain",
       cursor: "pointer",
+      borderRadius: "15px",
     },
     line: {
       width: "100%",
@@ -121,7 +122,7 @@ const Footer = () => {
         <div style={styles.bottomRow}>
           <div style={styles.contactInfo}>
             <span style={styles.contactText}>SUMATE A YO QUIERO SANTA FE</span>
-            <span style={styles.contactText}>+54 0342 4746550</span>
+            <span style={styles.contactText}>+54 342 4458448</span>
             <span style={styles.contactText}>contacto@yoquierosf.com.ar</span>
           </div>
           <img src={puenteFooter} alt="Puente" style={styles.bridge} />

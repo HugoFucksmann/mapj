@@ -103,7 +103,7 @@ export default function MapaReclamos() {
     <div id="mapa-reclamos" style={styles.container}>
       <div style={styles.section}>
         <div style={styles.imageWrapper}>
-          {/*  <div style={styles.imageShadowTop} /> */}
+        
           <img
             src={mapImg}
             width={400}
@@ -115,20 +115,14 @@ export default function MapaReclamos() {
         <div style={styles.content}>
           <h1 style={styles.title}>MAPA INTERACTIVO DE RECLAMOS</h1>
           <p style={styles.subtitle}>
-            Proyectos de Resolución sobre INFRAESTRUCTURA URBANA (bacheo,
-            luminaria, recolección de residuos, entre otros) que fueron
-            presentados en el Honorable Concejo Municipal desde noviembre del
-            2019 a la fecha, gracias al aporte de vecinos y vecinas.
+          Esta iniciativa surge con el objetivo de visibilizar el trabajo legislativo, que se nutre de los constantes reclamos y demandas de los vecinos y vecinas de nuestra ciudad, quienes nos transmiten sus inquietudes sobre la calidad de vida en Santa Fe. Temas como el bacheo, la mejora de la luminaria, la recolección de residuos, entre otros, son parte de las preocupaciones que buscamos abordar de manera efectiva a través de propuestas concretas.
+
           </p>
-          <p>
-            En ROSADO los proyectos en trámite que NO se han aprobado todavía.
-            En AZUL los proyectos aprobados que se encuentran en el Departamento
-            Ejecutivo Municipal para su estudio y ejecución. Estas solicitudes
-            no tienen una resolución directa y efectiva sobre el problema
-            destacado, ya que dependerá de la factibilidad que el Ejecutivo
-            Municipal considere para su ejecución.
-          </p>
-          <button style={styles.button}>Ver más</button>
+     
+         <button onClick={() => window.open("https://goo.su/JGADp3", "_blank")} 
+          style={styles.button} >
+            Ver más
+          </button>
         </div>
       </div>
 
@@ -141,13 +135,7 @@ export default function MapaReclamos() {
             <br />
             BARRIO
           </h2>
-          <div style={{ borderBottom: "2px solid black", width: 120 }}></div>
-          <p style={styles.bottomText}>
-            Con el objetivo de mejorar la comunicación con las y los vecinos de
-            la ciudad hemos creado un canal de comunicación y visibilización de
-            los reclamos que recibimos. Esta herramienta nos permite estar +
-            cerca, contar nuestro trabajo, y mejorar la participación ciudadana.
-          </p>
+         
           <button
             onClick={() =>
               (location.href =
